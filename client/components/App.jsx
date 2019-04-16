@@ -1,10 +1,14 @@
 import React from 'react'
+import ShowPhoto from './showPhoto'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+class App extends React.Component {
+  render () {
+    return (
+      <h1>NASAty space photos</h1>
+      <ShowPhoto />
+
+    )
+  }
 }
 
 export default App
-
