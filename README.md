@@ -2,13 +2,8 @@
 
 This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
 
-* Fork this repo
-* Rename your repo according to the app you're building
-
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
-```
+* Clone this repo
+* Create your own branch
 
 To start the development server with a watcher that rebuilds your code, run `npm run dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
 
@@ -25,4 +20,3 @@ and in the other:
 npm run server
 ```
 The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
-
