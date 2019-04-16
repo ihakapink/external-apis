@@ -1,10 +1,13 @@
 import React from 'react'
 
+import { Space } from './Space.jsx'
+
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <>
+      <Space />
+    </>
   )
 }
 
 export default App
-
