@@ -1,8 +1,11 @@
 import React from 'react'
+import StarWars from './StarWars'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <div>
+      <StarWars />
+    </div>
   )
 }
 
