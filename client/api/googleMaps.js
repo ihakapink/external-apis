@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const token = 'AIzaSyBFYlk0zacL_PS_Gqt9gv4_gOCcAR0Iip0'
+const token = '#NICE TRY'
 
 export function getFinance () {
   return request
@@ -30,7 +30,7 @@ var mapProp= {
 var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFYlk0zacL_PS_Gqt9gv4_gOCcAR0Iip0&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=[KEY HERE]&callback=myMap"></script>
 
 </body>
 </html>
