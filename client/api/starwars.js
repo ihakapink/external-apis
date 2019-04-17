@@ -8,11 +8,8 @@ export function getCharacter () {
     .get(`${url}${people}`)
     .then(data => data.body)
 }
-// export function getLink (link) {
-//   console.log(link)
-//   return request
-//     .get(link)
-//     .then(data => {
-//       console.log(data)
-//     })
-// }
+export function getLink (link) {
+  return request
+    .get(link)
+    .then(data => data.body)
+}
