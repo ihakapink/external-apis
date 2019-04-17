@@ -1,10 +1,13 @@
 import React from 'react'
+import RickandMorty from './RickandMorty'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <React.Fragment>
+      <h1>React development has Yo begun!</h1>
+      <RickandMorty />
+    </React.Fragment>
   )
 }
 
 export default App
-
