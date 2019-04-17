@@ -15,9 +15,9 @@ export default class App extends React.Component {
         <hr />
              {date}
             <hr />
-        <h2>Amy and Stru API assesment</h2>
+        <h2>Amy and Stru API assessment</h2>
 
-        {/* <Translate /> */}
+        <Translate />
       </>
 
     )
