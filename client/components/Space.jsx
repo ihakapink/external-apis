@@ -1,5 +1,5 @@
 import React from 'react'
-import { getSpace } from '../APIs/space';
+import { getSatellites, getSatelliteInfo } from '../APIs/space';
 
 export class Space extends React.Component {
   state = {
@@ -8,12 +8,13 @@ export class Space extends React.Component {
   }
   
   componentDidMount () {
-    getSpace()
-    .then(space => {
-      console.log('component', space[0])
+    getSatelliteInfo()
+    .then(satellite => {
       this.setState({
-        name: space[0].name,
-        id: space[0].id
+        name: satellite.name,
+        id: satellite.id,
+        lat: satellite.latitude,
+        lng: satellite.longitude,
       })
     })
   }
@@ -21,9 +22,8 @@ export class Space extends React.Component {
   render () {
     return (
       <>
-        <h1>Space</h1>
-        <h1>{this.state.name}</h1><br />
-        <h1>{this.state.id}</h1>
+        <h1>{this.state.name}</h1>
+        <p>Position: {this.state.lat}, {this.state.lng}</p><br />
       </>
     )
   }
