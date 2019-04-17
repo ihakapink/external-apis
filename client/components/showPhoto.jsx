@@ -1,11 +1,30 @@
 import React from 'react'
+import { showPhotoImage } from '../api/spacePhotos'
 
 export default class showPhoto extends React.Component {
-  const url = 'https://api.nasa.gov/planetary/apod?api_key='
-  const apiKey = 'oH0wCiZ8oNzskzc29u3IGkj3fzFNaW1CPlbGj4rJ'
+  state = {
+    hdurl: '',
+    explanation: ''
+  }
+
+  componentDidMount () {
+    showPhotoImage()
+      .then(photoData => {
+        const { hdurl, explanation } = photoData
+        this.setState({
+          hdurl,
+          explanation
+        })
+      })
+  }
+
   render () {
     return (
-      
+      <React.Fragment>
+        <h2>I'm overthinking it now:</h2>
+        <img src={this.state.hdurl} alt={this.state.explanation}/>
+        <p>{this.state.explanation}</p>
+      </React.Fragment>
     )
   }
 }

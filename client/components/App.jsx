@@ -4,8 +4,10 @@ import ShowPhoto from './showPhoto'
 class App extends React.Component {
   render () {
     return (
-      <h1>NASAty space photos</h1>
-      <ShowPhoto />
+      <React.Fragment>
+        <h1>NASAty space photos</h1>
+        <ShowPhoto />
+      </React.Fragment>
 
     )
   }
