@@ -1,10 +1,15 @@
 import React from 'react'
+import Nasa from './Nasa'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+export default class App extends React.Component {
+  render () {
+    return (
+      <React.Fragment>
+        <div>
+          <Nasa />
+        </div>
+
+      </React.Fragment>
+    )
+  }
 }
-
-export default App
-
