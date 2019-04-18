@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
+import News from "./News";
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
-  )
-}
+    <React.Fragment>
+      <h1>React development has begun!</h1>
+      <News />
+    </React.Fragment>
+  );
+};
 
-export default App
-
+export default App;
